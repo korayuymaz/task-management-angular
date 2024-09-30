@@ -1,0 +1,27 @@
+.task {
+  margin: auto;
+  margin-top: 20px;
+  width: 60%;
+  border: 1px solid pink;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.task-info {
+  margin-top: 10px;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+
+.task-category {
+  border: 1px solid pink;
+  background-color: rgb(214, 119, 135);
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.task-status {
+  padding: 5px 10px;
+}
