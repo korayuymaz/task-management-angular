@@ -13,6 +13,8 @@ export class TaskComponent {
   @Input() task!: Task;
   taskService = inject(TasksService);
   handleTaskStatusChange() {
-    console.log(this.task.id, !this.task.completed);
+    let newTask = this.task;
+    newTask.completed = !this.task.completed;
+    this.taskService.changeTaskStatus(this.task.id, newTask);
   }
 }

@@ -1,16 +1,16 @@
 {
   "tasks": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Complete Angular Project",
       "category": "Work",
-      "completed": false
+      "completed": true
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Buy Groceries",
       "category": "Personal",
-      "completed": true
+      "completed": false
     }
   ]
 }
