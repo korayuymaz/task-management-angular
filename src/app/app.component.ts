@@ -8,14 +8,9 @@ import { RouterOutlet, RouterLink } from "@angular/router";
   imports: [HomeComponent, RouterLink, RouterOutlet],
   template: `
     <main>
-      <a [routerLink]="['/']">
-        <header class="brand-name">
-          <img
-            class="brand-logo"
-            src="/favicon.ico"
-            alt="logo"
-            aria-hidden="true"
-          />
+      <a [routerLink]="['/']" class="brand-name">
+        <header>
+          <h2>Task List</h2>
         </header>
       </a>
       <section class="content">

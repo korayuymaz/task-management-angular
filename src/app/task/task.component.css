@@ -2,7 +2,7 @@
   margin: auto;
   margin-top: 20px;
   width: 60%;
-  border: 1px solid pink;
+  border: 1px solid var(--secondary-color);
   border-radius: 20px;
   padding: 20px;
 }
@@ -16,14 +16,14 @@
 
 .task-category {
   border: 1px solid;
-  background-color: rgb(31, 190, 252);
+  background-color: var(--secondary-color);
   border-radius: 10px;
   padding: 5px 10px;
   color: white;
 }
 
 .task-status {
-  border: 1px solid pink;
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   padding: 5px 10px;
 }
@@ -31,17 +31,17 @@
 button {
   border: none;
   font-size: medium;
-}
-
-.task-completed {
-  background-color: rgb(213, 37, 37);
   color: white;
 }
 
+.task-completed {
+  background-color: var(--primary-color);
+}
+
 .not-completed {
-  background-color: white;
+  background-color: var(--third-color);
 }
 
 .not-completed:hover {
-  border: 1.2px solid rgb(255, 95, 122);
+  border: 1.2px solid var(--primary-color);
 }

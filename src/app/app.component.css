@@ -1,0 +1,7 @@
+.brand-name {
+  text-decoration: none;
+}
+
+.brand-name:hover {
+  color: var(--secondary-color);
+}
