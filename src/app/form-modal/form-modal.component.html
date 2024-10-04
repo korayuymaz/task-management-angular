@@ -1,0 +1,4 @@
+<button *ngIf="!showTaskForm" (click)="openTaskForm()">Add Task</button>
+<div class="modal" *ngIf="showTaskForm">
+  <button (click)="closeTaskForm()">Close Form</button>
+</div>

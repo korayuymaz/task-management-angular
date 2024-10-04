@@ -4,11 +4,12 @@ import { Task } from "../task";
 import { TasksService } from "../tasks.service";
 import { TaskComponent } from "../task/task.component";
 import { CommonModule } from "@angular/common";
+import { FormModalComponent } from "../form-modal/form-modal.component";
 
 @Component({
   selector: "app-home",
   standalone: true,
-  imports: [RouterModule, TaskComponent, CommonModule],
+  imports: [RouterModule, TaskComponent, CommonModule, FormModalComponent],
   templateUrl: "./home.component.html",
   styleUrl: "./home.component.css",
 })
