@@ -23,4 +23,8 @@ export class TasksService {
       console.log("new data", data);
     });
   }
+
+  submitNewTask(title: string, category: string, completed: boolean) {
+    console.log(title, category, completed);
+  }
 }

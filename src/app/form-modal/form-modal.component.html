@@ -1,4 +1,12 @@
 <button *ngIf="!showTaskForm" (click)="openTaskForm()">Add Task</button>
 <div class="modal" *ngIf="showTaskForm">
   <button (click)="closeTaskForm()">Close Form</button>
+  <h2 class="section-heading">Apply now to live here</h2>
+  <form [formGroup]="applyForm" (submit)="submitApplication()">
+    <label for="title">Title</label>
+    <input id="title" type="text" formControlName="title" />
+    <label for="category">Category</label>
+    <input id="category" type="text" formControlName="category" />
+    <button type="submit" class="primary">Add Task</button>
+  </form>
 </div>
