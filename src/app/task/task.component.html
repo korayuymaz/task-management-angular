@@ -5,10 +5,15 @@
   <div class="task-info">
     <div class="task-category">{{ task.category }}</div>
 
-    <div class="task-status">
-      <button (click)="handleTaskStatusChange()">
-        {{ task.completed ? "Completed" : "Complete" }}
-      </button>
-    </div>
+    <button
+      (click)="handleTaskStatusChange()"
+      class="task-status"
+      [ngClass]="{
+        'task-completed': task.completed === true,
+        'not-completed': task.completed !== true
+      }"
+    >
+      {{ task.completed ? "Completed" : "Complete" }}
+    </button>
   </div>
 </div>

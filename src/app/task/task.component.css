@@ -15,8 +15,8 @@
 }
 
 .task-category {
-  border: 1px solid pink;
-  background-color: rgb(214, 119, 135);
+  border: 1px solid;
+  background-color: rgb(31, 190, 252);
   border-radius: 10px;
   padding: 5px 10px;
   color: white;
@@ -31,4 +31,17 @@
 button {
   border: none;
   font-size: medium;
+}
+
+.task-completed {
+  background-color: rgb(213, 37, 37);
+  color: white;
+}
+
+.not-completed {
+  background-color: white;
+}
+
+.not-completed:hover {
+  border: 1.2px solid rgb(255, 95, 122);
 }
