@@ -31,5 +31,6 @@ export class FormModalComponent {
       this.applyForm.value.category ?? "",
       this.applyForm.value.completed ?? false
     );
+    this.showTaskForm = false;
   }
 }

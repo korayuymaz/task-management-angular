@@ -2,6 +2,7 @@
   <h2 class="task-header">
     {{ task.title }}
   </h2>
+  <button (click)="deleteTask()" class="delete-button">X</button>
   <div class="task-info">
     <div class="task-category">{{ task.category }}</div>
 

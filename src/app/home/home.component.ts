@@ -16,9 +16,16 @@ import { FormModalComponent } from "../form-modal/form-modal.component";
 export class HomeComponent {
   taskList: Task[] = [];
   tasksService: TasksService = inject(TasksService);
-  constructor() {
+
+  constructor(private webSocketService: TasksService) {
     this.tasksService.getAllTasks().then((tasks: Task[]) => {
       this.taskList = tasks;
+    });
+  }
+
+  ngOnInit() {
+    this.webSocketService.getDataUpdates().subscribe((newData) => {
+      this.taskList = newData;
     });
   }
 }

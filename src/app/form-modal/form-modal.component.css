@@ -1,12 +1,52 @@
 .modal {
   position: fixed;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   transform-origin: left;
-  border: rgb(227, 227, 227) 1px solid;
+  border: var(--primary-color) 1px solid;
   background-color: white;
-  border-radius: 0.3rem;
+  border-radius: 10px;
   overflow: auto;
   z-index: 2;
+  padding: 10px 20px;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.primary {
+  border: none;
+  font-size: medium;
+  color: white;
+}
+
+.close-button {
+  padding: 2px 2px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: auto;
+  float: right;
+  border: var(--primary-color) 1px solid;
+  border-radius: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.close-button:hover {
+  background-color: var(--primary-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-open-button {
+  position: absolute;
+  right: 50px;
+  top: 20px;
 }

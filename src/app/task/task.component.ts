@@ -13,9 +13,14 @@ import { CommonModule } from "@angular/common";
 export class TaskComponent {
   @Input() task!: Task;
   taskService = inject(TasksService);
+
   handleTaskStatusChange() {
     let newTask = this.task;
     newTask.completed = !this.task.completed;
     this.taskService.changeTaskStatus(this.task.id, newTask);
+  }
+
+  deleteTask() {
+    this.taskService.deleteTask(this.task.id);
   }
 }
